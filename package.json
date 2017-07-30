@@ -1,0 +1,72 @@
+{
+  "name": "backlog",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "gulp"
+  },
+  "babel": {
+    "presets": [
+      "latest",
+      "react",
+      "flow"
+    ]
+  },
+  "test": "gulp test",
+  "eslintConfig": {
+    "extends": "airbnb",
+    "plugins": [
+      "import"
+    ],
+    "rules": {
+      "new-cap": [
+        2,
+        {
+          "capIsNewExceptions": [
+            "Map",
+            "List"
+          ]
+        }
+      ],
+      "jsx-a11y/href-no-hash": "off"
+    },
+    "env": {
+      "browser": true
+    },
+    "parser": "babel-eslint"
+  },
+  "dependencies": {
+    "babel-polyfill": "^6.23.0",
+    "immutable": "^3.8.1",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1",
+    "react-redux": "^5.0.5",
+    "redux": "^3.7.2",
+    "redux-actions": "^2.2.1",
+    "redux-immutable": "^4.0.0"
+  },
+  "devDependencies": {
+    "babel-eslint": "^7.2.3",
+    "babel-loader": "^7.1.1",
+    "babel-preset-flow": "^6.23.0",
+    "babel-preset-latest": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "chai": "^4.1.0",
+    "del": "^3.0.0",
+    "eslint": "^4.2.0",
+    "eslint-config-airbnb": "^15.0.2",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-jsx-a11y": "^6.0.2",
+    "eslint-plugin-react": "^7.1.0",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^6.1.2",
+    "gulp-eslint": "^4.0.0",
+    "gulp-flowtype": "^1.0.0",
+    "gulp-mocha": "^4.3.1",
+    "mocha": "^3.4.2",
+    "sinon": "^2.3.8",
+    "sinon-chai": "^2.12.0",
+    "webpack-stream": "^3.2.0"
+  }
+}
